@@ -1,11 +1,10 @@
 // Inicializace mapy – pohled na celou ČR
 const mapa = L.map('mapa').setView([49.8, 15.5], 7);
 
-// Podkladová mapa (OpenStreetMap)
-L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-  maxZoom: 20,
-  subdomains: 'abcd',
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+// Tmavě šedý podklad (Esri)
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+  maxZoom: 16,
+  attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, HERE, MapmyIndia, &copy; OpenStreetMap contributors'
 }).addTo(mapa);
 
 // Ochrana proti vložení HTML z dat do popupu
