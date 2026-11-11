@@ -24,6 +24,20 @@
         "type": "Point",
         "coordinates": [14.4378, 50.0755]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3,
+        "nazev": "Nový bod",
+        "popisek": "Doplňte popisek.",
+        "marker-color": "rgba(4, 127, 25, 1)",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.3828351, 50.121038]
+      }
     }
   ]
 }
